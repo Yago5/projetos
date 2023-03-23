@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="shortcut icon" href="netflix_icon.png" type="image/x-icon">
+    <style>
+        body{
+            background-color:black;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            width: 100vw;
+            background: linear-gradient(72deg, #3DDEBB 1% #8956F3 99%);
+        }
+        .nome{
+            color:crimson;
+            text-align: center;
+        }
+        .container{
+            background-color: aliceblue;
+            color: black;
+            text-align: center;
+            width: 900px;
+            margin: 50px;
+        }
+        
+        .box{
+            
+            margin: 45px;
+        }
+        #pesquisa{
+            margin: 55px;
+            text-align: right;
+            background-color: crimson;
+        }
+
+        .slider{
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .slides{
+            width: 400%;
+            height: 400px;
+            transition: 2s;
+        }
+        
+        .slides{
+            width: 25%;
+            position: relative;
+        }
+        
+        .manual-navigation{
+           position: absolute;
+           width: 800px;
+           margin-top: -40px;
+           display: flex;
+           justify-content: center;
+        }
+
+        .manual-btn{
+            border: 2px;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@200&display=swap');
+
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'inter', sans-serif;
+        }
+
+        header{
+            background-color: crimson;
+            box-shadow: 0px 3px 10px #fff;
+        }
+
+        .nav-bar{
+            display: flex;
+            justify-content: space-between;
+            padding: 1.5rem 6rem;
+        }
+
+        .logo{
+            display: flex;
+            align-items: center;
+        }
+
+        .logo h1{
+           color: #fff;
+        }
+
+        .nav-list ul{
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        .nav-item{
+            margin: 0 15px;
+        }
+
+        .nav-link{
+            font-size: 1.15rem;
+            color: #fff;
+        }
+
+        .login-button button{
+            border:none;
+            background-color: azure;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="nome"><h1>NETFLIX</h1></div>
+
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1>N</h1>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    
+                    <li class="nav-list"><a href="#" class="nav-link">Início</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="nav-list2">
+                <ul>
+                    
+                    <li class="nav-list2"><a href="#" class="nav-link">Planos</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="nav-list3">
+                <ul>
+                    
+                    <li class="nav-list3"><a href="#" class="nav-link">Sobre</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="login-button">
+                <button><a href="#">Entrar</a></button>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="slider">
+        <div class="slides">
+
+            <div class="slide first">
+                <img src="aquaman3 (1).jpg" alt="aquaman">
+            </div>
+            <div class="slide">
+                <img src="homem-aranha.png" alt="homem-aranha">
+            </div>
+            <div class="slide">
+                <img src="watchan2 (1).jpg" alt="watchman">
+            </div>
+
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+            </div>
+        </div>
+
+        <div class="manual-navigation">
+            <label for="radio1" nome="manual-btn"></label>
+            <label for="radio2" nome="manual-btn"></label>
+            <label for="radio3" nome="manual-btn"></label>
+        </div>
+    </div>
+
+    <div class="container"><h2>FILMES</h2></div>   
+
+         <img class="box" src="https://thumbs2.imgbox.com/8f/65/fsWKw4ih_t.jpg" alt="image host">                 
+         
+         <img class="box" src="https://thumbs2.imgbox.com/72/0a/jrKF7YwJ_t.jpg" alt="image host">
+         
+         <img class="box" src="https://thumbs2.imgbox.com/3e/6f/HbofIEX6_t.jpg" alt="image host"> 
+    
+    <div class="container"><h2>SÉRIES</h2></div>
+    <img class="box" src="https://thumbs2.imgbox.com/30/a4/rY8Mtotp_t.jpg" alt="image host">
+    <img class="box" src="https://thumbs2.imgbox.com/6a/dd/a7mIybt0_t.jpg" alt="image host">
+    <img class="box" src="https://thumbs2.imgbox.com/8d/ac/gH1hvNs7_t.jpg" alt="image host">
+
+    <div class="container"><h2>ANIMES</h2></div>
+    <img class="box" src="https://thumbs2.imgbox.com/e6/d7/6M9zsfRU_t.jpg" alt="image host">
+    <img class="box" src="https://thumbs2.imgbox.com/6c/52/H8F7HnqY_t.jpg" alt="image host">
+    <img class="box" src="https://thumbs2.imgbox.com/73/f0/jIRIgrh7_t.jpg" alt="image host">
+
+    <div class="container"><h2>DOCUMENTÁRIOS</h2></div>
+    <img class="box" src="https://thumbs2.imgbox.com/b1/c8/y1GFfj7t_t.jpg" alt="image host">
+    <img class="box" src="https://thumbs2.imgbox.com/e6/75/neNUpEyu_t.jpg" alt="image host">
+    <img class="box" src="https://thumbs2.imgbox.com/e5/17/RsEG8Xn5_t.jpg" alt="image host">
+
+</body>
+</html>
